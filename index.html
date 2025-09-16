@@ -253,7 +253,7 @@
         document.getElementById("tokenBox").style.display = "none";
         const indicator = document.getElementById("tokenIndicator");
         indicator.style.display = "flex";
-        indicator.innerHTML = `Logged in ✅ | Token: ${TOKEN.slice(0,4)}...${TOKEN.slice(-4)} <button onclick=\"removeToken()\">Change your Token.</button>`;
+        indicator.innerHTML = `Logged in ✅ | Token: ${TOKEN.slice(0,4)}...${TOKEN.slice(-4)}`;
         fetchInfo();
       } else {
         alert("Enter valid token");
